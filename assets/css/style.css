@@ -2,3 +2,58 @@ h2,
 .trivOption {
     text-align: center;
 }
+
+#gameButton{
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid red; 
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+}
+
+#gameButton:hover {
+    background-color: rgba(65, 2, 236, 0.554);
+    cursor: pointer;
+}
+
+#gameButton:active {
+    background-color: red;
+}
+
+.trivOption {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.trivOption:hover {
+    background-color: rgba(253, 0, 0, 0.473);
+    width: auto;
+    display: block;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('../images/bball-court.jpg');
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url('../images/bball-header.jpg');
+    background-size: auto;
+    opacity: .70;
+}
+
+h1,
+h2,
+h4,
+.trivOption {
+    color: white;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Saira', sans-serif;
+}

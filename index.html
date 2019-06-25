@@ -9,19 +9,21 @@
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+    <!-- Added link to font awesome for buttons-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Added link to Google font family-->
+    <link href="https://fonts.googleapis.com/css?family=Saira|Saira+Extra+Condensed&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- Jumbotron for Title -->
 <div class="jumbotron">
-    <h1 class="text-center">Mad Trivia Scramble</h1>
-    <br>
-    <h4 class="text-center" id="timeDisplay">Time Remaining: 00:00</h4>
+    <h1 class="text-center">Mad NBA Trivia Scramble</h1>
+    
+    <h4 class="text-center" id="timeDisplay">Time Remaining: 15 Seconds!</h4>
 </div>
 
     <div class="container">
@@ -29,18 +31,19 @@
     <div class="row">
       <!-- Trivia Card -->
       <div class="col-lg-12">
-        <h2>Question:</h2>
+          <h2 id="gameButton">START!</h2>
+          <h2 class="question"></h2>
 
-        <p class="trivOption" id="op1">Answer 1</p>
-        <p class="trivOption" id="op2">Answer 2</p>
-        <p class="trivOption" id="op3">Answer 3</p>
-        <p class="trivOption" id="op4">Answer 4</p>
+        <p class="trivOption" id="op1"></p>
+        <p class="trivOption" id="op2"></p>
+        <p class="trivOption" id="op3"></p>
+        <p class="trivOption" id="op4"></p>
 
 
       </div>
     </div>
   </div>
 
-  <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/app.js"></script>
 </body>
 </html>
