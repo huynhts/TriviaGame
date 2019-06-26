@@ -17,16 +17,21 @@ var incorrect = 0;
 //display start button for user to begin -- onClick call start function and page change to display question 1: 
 $('#gameButton').on('click', function() {
     if (!clickStart) {
+        questNum = 0;
+        correct = 0;
+        incorrect = 0;
         start();
         $('#gameButton').css('display', 'none');
+        $('.endGame').css('display', 'none');
         display ();
-
+        clickStart = true;
     }
 })
 
 
 //add start function for timer:
 function start () {
+
     if (!clockRunning) {
         timeLeft = setInterval(count, 1000);
         clockRunning = true;
@@ -52,23 +57,20 @@ function reset () {
     timer = 15;
     $('#timeDisplay').html('Time Remaining ' + timer + ' Seconds!');
     clockRunning = false;
-
-
-    if (clickStart === true){
-        clickStart = false;
-        questNum = 0;
-        correct = 0;
-        incorrect = 0;
-        $('#gameButton').css('display', 'block');
-    }
 }
 
 function checkQuestNum () {
     if (questNum === 7) {
         console.log(questNum);
+        clickStart = false;
         $('.optionsBox').css('display', 'none');
         $('.answerBreak').css('display', 'none');
-        
+        $('.endGame').css('display', 'block');
+        $('#gameButton').css('display', 'block');
+        $('#playAgain').html('Click Start to Play Again!');
+        $('#aCorrect').html('Correct Answers: ' + correct);
+        $('#aIncorrect').html('Incorrect Answers: ' + incorrect);
+
     } else {
         display();
     }
