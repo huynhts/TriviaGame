@@ -61,7 +61,6 @@ function reset () {
 
 function checkQuestNum () {
     if (questNum === 7) {
-        console.log(questNum);
         clickStart = false;
         $('.optionsBox').css('display', 'none');
         $('.answerBreak').css('display', 'none');
@@ -85,7 +84,6 @@ function answerScreen () {
     $('.optionsBox').css('display', 'none');
     $('.answerBreak').css('display', 'block');
     $('#answerGif').html('<img src="' + questionObj[questNum].pic +'">')
-    console.log(questNum);
 
     
     if (correctAnswer) {
@@ -142,8 +140,6 @@ function display () {
     var displayA2 = questionObj[questNum].trivA[a2];
     var displayA3 = questionObj[questNum].trivA[a3];
     var displayA4 = questionObj[questNum].trivA[a4];
-    console.log(randomInt);
-    console.log(questionObj[questNum].trivA)
    
     $('.question').html(displayQ);
     $('#op1').html(displayA1);
