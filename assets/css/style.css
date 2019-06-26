@@ -57,3 +57,15 @@ h2,
 h4 {
     font-family: 'Saira', sans-serif;
 }
+
+.answerBreak,
+.endGame {
+    text-align: center;
+    font-family: 'Saira', sans-serif;
+    color: white;
+    display: none;
+}
+
+.optionsBox {
+    display: block;
+}
